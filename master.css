@@ -1,0 +1,7 @@
+body{
+    display: grid;
+}
+
+.menu_list{
+    list-style-type: none;
+}
