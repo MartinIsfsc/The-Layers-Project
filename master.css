@@ -15,7 +15,7 @@ header{
 
 }
 
-.titre{
+.menu_titre{
     grid-column: 2 ;
     grid-row: 2;
     background-image: url("../image/tlp_blanc.png");
@@ -79,16 +79,17 @@ header{
     text-transform: uppercase;
 }
 
-a:link, a:visited{
+.menu_link:link, .menu_link:visited{
     color : #ffffff ;
     text-decoration: none;
     border-radius: 15px;
     font-weight: 600;
+    background-color: #000000;
 }
 
-a:hover, a:active{
+.menu_link:hover, .menu_link:active{
     background-color: #444444;
-    padding: 4px 10px;
+    padding: 4px 10px;    
 }
 
 .slogan{
@@ -112,7 +113,7 @@ a:hover, a:active{
 
 .intro{
     display: grid;
-    grid-template: 1% 5% 10% 50% 15% 5% 5% / 1.5fr 7fr 1.5fr; 
+    grid-template: 1% 5% 15% 45% 5% 5% 5% / 1.5fr 6fr 1.5fr; 
     background-color: #444444;
 }
 
@@ -127,7 +128,7 @@ a:hover, a:active{
 
 .intro_texte{
     margin : 30px;
-    font-size : 22pt;
+    font-size : 14pt;
     color: #ffffff;
     grid-column: 2;
     grid-row : 4;
@@ -148,27 +149,47 @@ q{
     background-color: #ffffff;
     grid-template-columns: 3% 1fr 1fr 1fr 3%;
     grid-column-gap: 30px;
-    grid-template-rows: 5% 5% 5% 20% 5%;
+    grid-template-rows: 5% 10% 5% 20% 5%;
 }
 
-.agenda_event{
-    grid-row: 4;
-    background-color: lightblue;
-}
-
-.agenda_link{
+#agenda_link{
     text-transform: uppercase;
+    grid-row: 2;
+    font-size : 20pt;
+    grid-column: 3;
+    justify-self: center;
+}
+
+#agenda_link:link, #agenda_link:visited{
+    color : #66ed5d;
+    text-decoration: none;
+
+}
+
+#agenda_link:hover, #agenda_link:active{
+    background-color: #444444;
+    padding: 4px 10px;
+    border-radius: 15px;
 }
 
 #agenda_event1{
     grid-column: 2;
+    grid-row: 4;
+    background-color: lightblue;    
 }
 
 #agenda_event2{
     grid-column: 3;
+    grid-row: 4;
+    background-color: lightblue;    
 }
 
 #agenda_event3{
     grid-column: 4;
+    grid-row: 4;
+    background-color: lightblue;    
 }
 
+.agenda_event_date{
+    font-size: 20pt;
+}
