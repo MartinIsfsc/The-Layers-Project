@@ -12,7 +12,7 @@ body{
 .body_grid{
     display: grid;
     grid-template-columns: 75px repeat(12, 1fr) 75px;
-    grid-template-rows: auto 3fr 3fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
 }
 
 header{
@@ -126,7 +126,9 @@ header{
 
 .intro{
     display: grid;
-    grid-template: 1% 5% 15% 45% 5% 5% 5% / 1.5fr 6fr 1.5fr; 
+    grid-column: 1 / 16 ;
+    grid-row: 3;
+    grid-template: 1% 5% 10% 45% 5% 5% 5% / 1fr 4fr 1fr; 
     background-color: #444444;
 }
 
@@ -158,6 +160,8 @@ q{
 }
 
 .agenda_container{
+    grid-row: 4;
+    grid-column: 1 / 15;
     display: grid;
     background-color: #ffffff;
     grid-template-columns: 3% 1fr 1fr 1fr 3%;
@@ -206,4 +210,9 @@ q{
 
 .agenda_event_date{
     font-size: 16pt;
+}
+
+.news_container{
+    grid-row: 5;
+
 }
