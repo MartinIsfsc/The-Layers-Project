@@ -6,6 +6,7 @@
     <title>The Layers Project</title>
     <link rel="stylesheet" href="/css/master.css">
     <link href="https://fonts.googleapis.com/css?family=Exo:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   </head>
   
   <body class="body_grid">
@@ -15,33 +16,33 @@
     
     <header>
 
-      <a href="index.html" class="menu_logo"><img src="image/tlp_blanc.png" alt="THE LAYERS PROJECT" class="menu_logo_link"></a>
-      <div class="menu_accueil"> <a href="index.html" class="menu_link">accueil</a> </div>
-      <div class="menu_projet"> <a href="projet.html" class="menu_link"> projet </a></div>
-      <div class="menu_asbl"> <a href="asbl.html" class="menu_link"> asbl</a></div>
-      <div class="menu_agenda"> <a href="agenda.html" class="menu_link"> agenda</a></div>
-      <div class="menu_news"><a href="news.html" class="menu_link">news</a> </div>
-      <div class="menu_galerie"><a href="galerie.html" class="menu_link">galerie</a> </div>
+      <a href="index.html" id="menu_logo"><img src="image/tlp_blanc.png" alt="THE LAYERS PROJECT" id="menu_logo_link"></a>
+      <span id="menu_accueil"> <a href="index.html" class="menu_link">accueil</a> </span>
+      <span id="menu_projet"> <a href="projet.html" class="menu_link"> projet </a></span>
+      <span id="menu_asbl"> <a href="asbl.html" class="menu_link"> asbl</a></span>
+      <span id="menu_agenda"> <a href="agenda.html" class="menu_link"> agenda</a> </span>
+      <span id="menu_news"><a href="news.html" class="menu_link">news</a> </span>
+      <span id="menu_galerie"><a href="galerie.html" class="menu_link">galerie</a> </span>
 
     </header>
 
     
     <!-- LE SLOGAN -->
     
-    <section class="slogan">
+    <section id="slogan">
       
-      <p class="slogan_titre">Lâche ta caisse !</p>
+      <p id="slogan_titre">Lâche ta caisse !</p>
 
     </section>
 
     
     <!-- L'intro -->
     
-    <section class="intro_container">
+    <section id="intro_container">
       
-      <p class="intro_titre">introduction au projet</p>
+      <p id="intro_titre">introduction au projet</p>
       
-      <p class="intro_texte">
+      <p id="intro_texte">
         À l'heure où l'on voit des files interminables de voitures bloquées sur la route, à l'heure où l'on fait tout pour trouver des alternatives viables pour pouvoir circuler en ville, où l'on aimerait circuler plus rapidement et efficacement que jamais, on reste malgré tout coincé par les mêmes problèmes depuis des années déjà. C'est pourquoi, nous avons décidé de reprendre un projet de réaménagement de ville qui serait véritablement optimisé pour la circulation. Ce projet imaginé d'abord par Walt Disney, renaît aujourd'hui sous le nom de Layers Project.
       </p>
       
@@ -52,7 +53,7 @@
     
     <!-- L'agenda -->
     
-    <section class="agenda_container">
+    <section id="agenda_container">
       
       <a href="agenda.html" id="agenda_link"> agenda</a>
       
@@ -73,7 +74,7 @@
     
     <!-- Les News -->
     
-    <section class="news_container">
+    <section id="news_container">
 
       <a href="news.html" id="news_link">news</a>
 
@@ -100,51 +101,64 @@
 
     <footer>
       
-      <div>> COORDONNEES</div>
-
-      <div>> MAP DU SITE</div>
-
-      <div>> L'ASBL</div>
-
-      <div>
-        ASBL Vill-age <br>
-        Rue des charbonniers 12 <br>
-        1020 Bruxelles <br>
-        <br>
-        TEL : +322 734 34 34 <br>
-        MAIL : layers.project@gmail.com <br>
+      <span id="footer_coordonnees_titre">coordonnées</span>
+                 
+      
+      <div id="footer_coordonnees_content">
+            ASBL THE LAYERS PROJECT <br>
+            Rue des charbonniers 12 <br>
+            1020 Bruxelles <br>
+            <br>
+            TEL : <a href="callto:+3227343434" class="footer_link">+322 734 34 34</a>  <br>
+            MAIL : <a href="mailto:layers.project@gmail.com" class="footer_link"> layers.project@gmail.com </a><br>
       </div>
-        
+    
 
-      <div>
+
+      <span id="footer_map_titre"> map du site</span>
+  
+      <div id="footer_map_content">
         
         <p>
-            Accueil <br>
+            <a href="index.html" class="footer_link"> Accueil</a> <br>
+            
+            <a href="projet.html" class="footer_link">Projet</a> <br>
+            
+            <a href="asbl.html" class="footer_link">ASBL</a> <br>
             <br>
-            Projet <br>
-            <br>
-            ASBL <br>
-            <br>
-            Agenda <br>
-            <br>
-            News <br>
-            <br>
+            <a href="agenda.html" class="footer_link">Agenda</a> <br>
+            
+            <a href="news" class="footer_link">News</a> <br>
+            
         </p>
 
       </div>
 
-      <div>
+      <span id="footer_asbl_titre">l'asbl</span>
+
+      <div id="footer_asbl_content">
         
         <p>
           Nous sommes une jeune ASBL belge qui a pour but de promouvoir le projet d'aménagement des villes dans l'optique de l'optimisation de la circulation, la modernité, l'écologie et le confort dans les transports. 
           <br>
-          Rejoignez-nous sur les réseaux :
+          <br>
+          Rejoignez-nous sur les réseaux : <br>
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i> 
+          <i class="fab fa-twitter-square fa-2x"></i>
         </p>
 
       </div>
 
-      <div>
-        <p></p>COPYRIGHT 2018 | Tous droits réservés | thelayersproject.be | Conditions générales d'utilisation et Mentions Légales</div>
+      <span id="footer_copyright">
+        
+          COPYRIGHT 2018 | Tous droits réservés | 
+          <a href="index.html" class="footer_link">thelayersproject.be</a> | 
+          <a href="conditions.html" class="footer_link"> Conditions générales d'utilisation </a> 
+          et 
+          <a href="mentions.html" class="footer_link"> Mentions Légales</a>
+      
+      </span>
     
     </footer>
 
