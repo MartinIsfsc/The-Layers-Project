@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   </head>
   
-  <body class="body_grid">
+  <body>
 
     
     <!-- LE MENU -->
@@ -54,20 +54,40 @@
     <!-- L'agenda -->
     
     <section id="agenda_container">
-      
+        
       <a href="agenda.html" id="agenda_link"> agenda</a>
       
-      <img src="image/laurent_alexandre.jpeg" id="agenda_event1" alt="laurent alexandre">
-        
-      <p class="agenda_event_date" id="agenda_event-date1">21 / 11 conférence de laurent alexandre</p>
-    
-      <img src="image/elon_musk.jpg" id="agenda_event2" alt="elon musk">
-        
-      <p class="agenda_event_date" id="agenda_event-date2">11 / 02 conférence d'elon musk</p>
       
-      <img src="image/journee_sans_voitures.png" id="agenda_event3" alt="groupe en vélo devant monument">
+      <!-- évent 1 -->
+      <a href="event_laurent_alexandre" id="agenda_event_block1_link">
+      
+        <div id="agenda_event_block1">  
+      
+          <!-- <img src="image/laurent_alexandre.jpeg" id="agenda_event_image1" alt="laurent alexandre"> -->
+  
+          <p class="agenda_event_date" id="agenda_event-date1">21 / 11 conférence de laurent alexandre</p>
+    
+        </div>
 
-      <p class="agenda_event_date" id="agenda_event-date3">22 / 09 journée sans voitures</p>
+      </a>
+
+      <div id="agenda_event_block2"> 
+        
+        <img src="image/elon_musk.jpg" id="agenda_event_image2" alt="elon musk">
+        
+        <p class="agenda_event_date" id="agenda_event-date2">11 / 02 conférence d'elon musk</p>
+      
+      </div>
+
+      
+      <div id="agenda_event_block3"> 
+
+        <img src="image/journee_sans_voitures.png" id="agenda_event_image3" alt="groupe en vélo devant monument">
+
+        <p class="agenda_event_date" id="agenda_event-date3">22 / 09 journée sans voitures</p>
+
+      </div>
+
 
     </section>
 
@@ -134,6 +154,7 @@
 
       </div>
 
+      
       <span id="footer_asbl_titre">l'asbl</span>
 
       <div id="footer_asbl_content">
@@ -150,15 +171,19 @@
 
       </div>
 
-      <span id="footer_copyright">
-        
-          COPYRIGHT 2018 | Tous droits réservés | 
-          <a href="index.html" class="footer_link">thelayersproject.be</a> | 
-          <a href="conditions.html" class="footer_link"> Conditions générales d'utilisation </a> 
-          et 
-          <a href="mentions.html" class="footer_link"> Mentions Légales</a>
       
-      </span>
+      <span id="footer_copyright">
+          
+        <span id="footer_copyright_content">
+            COPYRIGHT 2018 | Tous droits réservés | 
+            <a href="index.html" class="footer_link">thelayersproject.be</a> | 
+            <a href="conditions.html" class="footer_link"> Conditions générales d'utilisation </a> 
+            et 
+            <a href="mentions.html" class="footer_link"> Mentions Légales</a>
+      
+        </span>
+        
+      </span>  
     
     </footer>
 
