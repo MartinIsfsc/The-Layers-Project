@@ -16,6 +16,13 @@ body{
     
 }
 
+.body_grid{
+    display: grid;
+    grid-template-columns: 75px repeat(12, 1fr) 75px;
+    grid-template-rows: auto auto auto auto auto auto auto;
+
+}
+
 p{
     margin: 0;
 }
@@ -534,6 +541,7 @@ footer{
 grid-row: 2;
 margin-top: 20%;
 }
+
 #chapeau{
     margin : 30px;
     font-size : 14pt;
