@@ -1,39 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   
   <head>
     <meta charset="utf-8">
-    <title>Présentation de l'ASBL</title>
+    <title>The Layers Project</title>
     <link rel="stylesheet" href="/css/master.css">
-    <script src="script.js"> </script>
     <link href="https://fonts.googleapis.com/css?family=Exo:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   </head>
   
   <body>
 
+    
+    <!-- LE MENU -->
+    
     <header>
-      
-      <div class="menu_titre"></div>
-      <div class="menu_accueil"> <a href="index.html" class="menu_link">accueil</a> </div>
-      <div class="menu_projet"> <a href="projet.html" class="menu_link"> projet </a></div>
-      <div class="menu_asbl"> <a href="asbl.html" class="menu_link"> asbl</a></div>
-      <div class="menu_agenda"> <a href="agenda.html" class="menu_link"> agenda</a></div>
-      <div class="menu_news"><a href="news.html" class="menu_link">news</a> </div>
-      <div class="menu_galerie"><a href="galerie.html" class="menu_link">galerie</a> </div> 
+
+      <a href="index.html" id="menu_logo"><img src="image/tlp_blanc.png" alt="THE LAYERS PROJECT" id="menu_logo_link"></a>
+      <span id="menu_accueil"> <a href="index.html" class="menu_link">accueil</a> </span>
+      <span id="menu_projet"> <a href="projet.html" class="menu_link"> projet </a></span>
+      <span id="menu_asbl"> <a href="asbl.html" class="menu_link"> asbl</a></span>
+      <span id="menu_agenda"> <a href="agenda.html" class="menu_link"> agenda</a> </span>
+      <span id="menu_news"><a href="news.html" class="menu_link">news</a> </span>
+      <span id="menu_galerie"><a href="galerie.html" class="menu_link">galerie</a> </span>
 
     </header>
 
-    <section class="slogan">
+    
+    <!-- LE SLOGAN -->
+    
+    <section id="slogan">
       
-      <p class="slogan_titre">Lâche ta caisse !</p>
+      <p id="slogan_titre">Lâche ta caisse !</p>
 
     </section>
 
-    <section class="intro">
+    
+    <!-- L'intro -->
+    
+    <section id="intro_container">
       
-      <p class="intro_slogan">introduction au projet</p>
+      <p id="intro_titre">introduction au projet</p>
       
-      <p class="intro_texte">
+      <p id="intro_texte">
         À l'heure où l'on voit des files interminables de voitures bloquées sur la route, à l'heure où l'on fait tout pour trouver des alternatives viables pour pouvoir circuler en ville, où l'on aimerait circuler plus rapidement et efficacement que jamais, on reste malgré tout coincé par les mêmes problèmes depuis des années déjà. C'est pourquoi, nous avons décidé de reprendre un projet de réaménagement de ville qui serait véritablement optimisé pour la circulation. Ce projet imaginé d'abord par Walt Disney, renaît aujourd'hui sous le nom de Layers Project.
       </p>
       
@@ -41,101 +50,140 @@
     
     </section>
 
-    <section class="agenda_container">
-      
+    
+    <!-- L'agenda -->
+    
+    <section id="agenda_container">
+        
       <a href="agenda.html" id="agenda_link"> agenda</a>
       
-      <div id="agenda_event1">
-        
-        <p class="agenda_event_date">21 / 11 CONFERENCE DE LAURENT ALEXANDRE</p>
-        
-      </div>
+      
+      <!-- évent 1 -->
+      <a href="event_laurent_alexandre" id="agenda_event_block1_link">
+      
+        <div id="agenda_event_block1">  
+      
+          <!-- <img src="image/laurent_alexandre.jpeg" id="agenda_event_image1" alt="laurent alexandre"> -->
+  
+          <p class="agenda_event_date" id="agenda_event-date1">21 / 11 conférence de laurent alexandre</p>
     
-      <div id="agenda_event2">
+        </div>
+
+      </a>
+
+      <div id="agenda_event_block2"> 
         
-        <p class="agenda_event_date">11 / 02 CONFERENCE D'ELON MUSK</p>
+        <img src="image/elon_musk.jpg" id="agenda_event_image2" alt="elon musk">
+        
+        <p class="agenda_event_date" id="agenda_event-date2">11 / 02 conférence d'elon musk</p>
       
       </div>
-      
-      <div id="agenda_event3">
 
-        <p class="agenda_event_date">22 / 09 JOURNEE SANS VOITURES</p>
+      
+      <div id="agenda_event_block3"> 
+
+        <img src="image/journee_sans_voitures.png" id="agenda_event_image3" alt="groupe en vélo devant monument">
+
+        <p class="agenda_event_date" id="agenda_event-date3">22 / 09 journée sans voitures</p>
 
       </div>
+
 
     </section>
 
-    <section>
+    
+    <!-- Les News -->
+    
+    <section id="news_container">
 
-      <p>NEWS</p>
+      <a href="news.html" id="news_link">news</a>
 
-      <div>
+      <p class="news_article_titre" id="news_article_titre1">la technologie en plein coeur de la ville</p>
 
-        <p>LA TECHNOLOGIE EN PLEIN COEUR DE LA VILLE</p>
+      <img src="image/ecran.png" id="news_article1" alt="écran">
         
-      </div>
+      <p class="news_article_titre" id="news_article_titre2">une ville sans embouteillages ?</p>
 
-      <div>
+      <img src="image/ecran.png" id="news_article2" alt="écran">
 
-        <p>UNE VILLE SANS EMBOUTEILLAGE ?</p>
-        
-      </div>
+      <p class="news_article_titre" id="news_article_titre3">prix de la meilleure idée de la décénie</p>
 
-      <div>
-
-        <p>PRIX DE LA MEILLEURE IDEE DE LA DECENIE</p>
-
-      </div>
+      <img src="image/ecran.png" id="news_article3" alt="écran">
+      
+      <p class="news_article_titre" id="news_article_titre4">laurent alexandre, ou les révélations d'un homme déchu</p>
+    
+      <img src="image/laurent_alexandre.jpeg" id="news_article4" alt="laurent alexandre">
 
     </section>
+
+    
+    <!-- Le Footer -->
 
     <footer>
       
-      <div>> COORDONNEES</div>
-
-      <div>> MAP DU SITE</div>
-
-      <div>> L'ASBL</div>
-
-      <div>
-        ASBL Vill-age <br>
-        Rue des charbonniers 12 <br>
-        1020 Bruxelles <br>
-        <br>
-        TEL : +322 734 34 34 <br>
-        MAIL : layers.project@gmail.com <br>
+      <span id="footer_coordonnees_titre">coordonnées</span>
+                 
+      
+      <div id="footer_coordonnees_content">
+            ASBL THE LAYERS PROJECT <br>
+            Rue des charbonniers 12 <br>
+            1020 Bruxelles <br>
+            <br>
+            TEL : <a href="callto:+3227343434" class="footer_link">+322 734 34 34</a>  <br>
+            MAIL : <a href="mailto:layers.project@gmail.com" class="footer_link"> layers.project@gmail.com </a><br>
       </div>
-        
+    
 
-      <div>
+
+      <span id="footer_map_titre"> map du site</span>
+  
+      <div id="footer_map_content">
         
         <p>
-            Accueil <br>
+            <a href="index.html" class="footer_link"> Accueil</a> <br>
+            
+            <a href="projet.html" class="footer_link">Projet</a> <br>
+            
+            <a href="asbl.html" class="footer_link">ASBL</a> <br>
             <br>
-            Projet <br>
-            <br>
-            ASBL <br>
-            <br>
-            Agenda <br>
-            <br>
-            News <br>
-            <br>
+            <a href="agenda.html" class="footer_link">Agenda</a> <br>
+            
+            <a href="news" class="footer_link">News</a> <br>
+            
         </p>
 
       </div>
 
-      <div>
+      
+      <span id="footer_asbl_titre">l'asbl</span>
+
+      <div id="footer_asbl_content">
         
         <p>
           Nous sommes une jeune ASBL belge qui a pour but de promouvoir le projet d'aménagement des villes dans l'optique de l'optimisation de la circulation, la modernité, l'écologie et le confort dans les transports. 
           <br>
-          Rejoignez-nous sur les réseaux :
+          <br>
+          Rejoignez-nous sur les réseaux : <br>
+          <i class="fab fa-facebook-square fa-2x"></i>
+          <i class="fab fa-instagram fa-2x"></i> 
+          <i class="fab fa-twitter-square fa-2x"></i>
         </p>
 
       </div>
 
-      <div>
-        <p></p>COPYRIGHT 2018 | Tous droits réservés | thelayersproject.be | Conditions générales d'utilisation et Mentions Légales</div>
+      
+      <span id="footer_copyright">
+          
+        <span id="footer_copyright_content">
+            COPYRIGHT 2018 | Tous droits réservés | 
+            <a href="index.html" class="footer_link">thelayersproject.be</a> | 
+            <a href="conditions.html" class="footer_link"> Conditions générales d'utilisation </a> 
+            et 
+            <a href="mentions.html" class="footer_link"> Mentions Légales</a>
+      
+        </span>
+        
+      </span>  
     
     </footer>
 
